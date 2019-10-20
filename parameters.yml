@@ -1,0 +1,8 @@
+parameters:
+  export.configuration:
+
+    node:
+      article:
+        - { processor: NodeMetadataProcessor }
+        - { processor: PropertyProcessor, source: title, destination: title }
+        - { processor: LongTextAndSummaryProcessor, source: body, destination: body }

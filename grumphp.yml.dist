@@ -1,0 +1,10 @@
+parameters:
+    ascii:
+        failed: ~
+        succeeded: ~
+    tasks:
+        phpcs:
+            standard: ./vendor/squizlabs/php_codesniffer/src/Standards/PSR2
+            ignore_patterns:
+                - vendor/
+                - var/

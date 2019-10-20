@@ -1,0 +1,6 @@
+/.env.local
+/var/
+/vendor/
+/grumphp.yml
+/site/
+

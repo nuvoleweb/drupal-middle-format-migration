@@ -1,0 +1,29 @@
+{
+    "data": {
+        "type": "article",
+        "id": "1",
+        "attributes": {
+            "body_summary": [
+                ""
+            ],
+            "body_value": [
+                "<p>Sed non eum veniam<\/p>\n"
+            ],
+            "title": [
+                "Ex irure adipisci laborum quia facere"
+            ]
+        },
+        "links": {
+            "self": "http:\/\/example.com\/article\/1"
+        }
+    },
+    "meta": {
+        "changed": "1554585365",
+        "created": "1554585365",
+        "language": "und",
+        "promote": "1",
+        "revision_id": "1",
+        "status": "1",
+        "sticky": "0"
+    }
+}

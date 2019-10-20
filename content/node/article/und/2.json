@@ -1,0 +1,29 @@
+{
+    "data": {
+        "type": "article",
+        "id": "2",
+        "attributes": {
+            "body_summary": [
+                "<p>In ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autem<\/p>\n"
+            ],
+            "body_value": [
+                "<p>In ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autemIn ex ex omnis autem<\/p>\n"
+            ],
+            "title": [
+                "Irure natus ipsum enim corrupti omnis sit reprehenderit"
+            ]
+        },
+        "links": {
+            "self": "http:\/\/example.com\/article\/2"
+        }
+    },
+    "meta": {
+        "changed": "1554632512",
+        "created": "1554632512",
+        "language": "und",
+        "promote": "1",
+        "revision_id": "2",
+        "status": "1",
+        "sticky": "0"
+    }
+}

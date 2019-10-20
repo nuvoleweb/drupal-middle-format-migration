@@ -1,0 +1,44 @@
+parameters:
+  drupal.root: './site/web'
+  drupal.uri: 'http://drupal.docker.localhost:8000'
+
+  export.root: './content'
+  export.base_url: 'http://example.com'
+
+  export.configuration: []
+
+services:
+  _defaults:
+    autowire: true
+
+  NuvoleWeb\DrupalMigration\:
+    resource: '../src'
+
+  NuvoleWeb\DrupalMigration\Processor\:
+    resource: '../src/Processor'
+    arguments: ['@NuvoleWeb\DrupalMigration\Drupal\Driver']
+
+  NuvoleWeb\DrupalMigration\ExportWriter:
+    arguments: ['%export.root%', '@Symfony\Component\Filesystem\Filesystem']
+
+  NuvoleWeb\DrupalMigration\Drupal\Driver:
+    arguments: ['%drupal.root%', '%drupal.uri%']
+    calls:
+      - [setCoreFromVersion]
+
+  NuvoleWeb\DrupalMigration\ProcessorManager:
+    arguments: ['%export.configuration%']
+
+  League\Fractal\Manager:
+    calls:
+      - [setSerializer, ['@League\Fractal\Serializer\JsonApiSerializer']]
+
+  League\Fractal\Serializer\JsonApiSerializer:
+    arguments: ['%export.base_url%']
+
+  Symfony\Component\Console\Application:
+    public: true
+
+  Symfony\Component\Filesystem\Filesystem:
+    shared: false
+
